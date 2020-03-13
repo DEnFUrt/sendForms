@@ -5,8 +5,8 @@ const message = {
 }
 
 export function sendForms(idForm) {   
-    let alertMessage = this.querySelector('div.status');
-    if (!alertMessage) {
+    let alertMessage = this.querySelector('div.status'); //статус отправки выводится в div который создается в момент отправки
+    if (!alertMessage) {                                 //можно реализовать свой способ оповещения пользователя
         alertMessage = document.createElement('div');
         alertMessage.classList.add('status');
         this.append(alertMessage);
